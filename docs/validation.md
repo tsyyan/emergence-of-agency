@@ -40,3 +40,13 @@ not successful-run validation. Partial directories remain preserved; CI retains 
   additional execution record; green controls still do not establish agency or general accuracy.
 
 The upstream full-suite failures are documented separately in `repository-audit.md`.
+
+## Hosted execution
+
+GitHub Actions [39130922866](https://github.com/tsyyan/emergence-of-agency/actions/runs/39130922866)
+completed successfully on source `d2cb790408663a71ba55c01821dea3afc8a559ae`.
+All three jobs passed: Linux/Python 3.11, Linux/Python 3.13 and Windows/Python 3.13.
+Each job ran the 13 integration tests, executed fresh controls, replayed fresh evidence and
+both committed bundles, and uploaded its `E000-<os>-py<version>` artifact.
+Raw run/artifact metadata is retained in [first-ci.json](audit/first-ci.json).
+Artifact retention is managed by GitHub and is not a permanent archival guarantee.

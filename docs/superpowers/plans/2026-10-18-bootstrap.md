@@ -22,17 +22,17 @@
 ## Task 1: Evidence runner and gate
 Files: agency/__main__.py, agency/controls.py, tests/test_controls.py.
 Interfaces: run(output: Path), check(output: Path), strict_report(report: Path, required: list[Path]).
-- [ ] Write real subprocess integration tests for five controls, replay, refusal to overwrite,
+- [x] Write real subprocess integration tests for five controls, replay, refusal to overwrite,
       tampering, missing receipt and strict coverage failures; observe failure before implementation.
-- [ ] Implement controls and replay, preserving raw CLI receipts and command outputs.
-- [ ] Run `python -m unittest discover -s tests -v`; require no failures.
-- [ ] Run `python -m agency run --output results/E000-bootstrap` then check that directory.
-- [ ] Commit implementation and actual evidence.
+- [x] Implement controls and replay, preserving raw CLI receipts and command outputs.
+- [x] Run `python -m unittest discover -s tests -v`; require no failures.
+- [x] Run `python -m agency run --output results/E000-bootstrap` then check that directory.
+- [x] Commit implementation and actual evidence.
 
 ## Task 2: Research protocol, documentation, CI
 Files: README.md, AGENTS.md, protocols/E001-continuity.md, docs/buddie-integration.md,
 docs/repository-audit.md, .github/workflows/research.yml.
-- [ ] Document observed upstream state, trust limits, reproduction and unexecuted protocol.
-- [ ] Add cross-platform CI with artifact upload and committed evidence replay.
-- [ ] Obtain fresh whole-project review; fix substantive issues with regression tests.
-- [ ] Push authorized initial main, observe workflow completion and artifact availability.
+- [x] Document observed upstream state, trust limits, reproduction and unexecuted protocol.
+- [x] Add cross-platform CI with artifact upload and committed evidence replay.
+- [x] Obtain fresh whole-project review; fix substantive issues with regression tests.
+- [x] Push authorized initial main, observe workflow completion and artifact availability.
