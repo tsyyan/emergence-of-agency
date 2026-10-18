@@ -1,0 +1,14 @@
+{
+  "experiment": "E000",
+  "kind": "synthetic_infrastructure_control",
+  "matched": 5,
+  "model_runs": 0,
+  "observed": {
+    "empty": "EMPTY",
+    "malformed": "FAIL",
+    "missing": "GAPS",
+    "valid": "PASS",
+    "wrong_hash": "FAIL"
+  },
+  "total": 5
+}

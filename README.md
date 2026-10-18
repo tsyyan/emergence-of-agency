@@ -28,6 +28,7 @@ python -m unittest discover -s tests -v
 python -m agency run --output build/E000-local
 python -m agency check build/E000-local
 python -m agency check results/E000-bootstrap
+python -m agency check results/E000-versioned
 ```
 
 Choose a new output directory for every run. Existing directories are rejected, including
@@ -43,7 +44,9 @@ Timestamps, paths and environment details vary; control inputs and expected outc
 
 ## Evidence and limits
 
-The committed [E000 report](results/E000-bootstrap/REPORT.md) is an infrastructure result only.
+The committed [E000 report](results/E000-versioned/REPORT.md) is an infrastructure result only.
+`E000-bootstrap` preserves the first run before the initial source commit; `E000-versioned`
+records the first source commit. Both bundles are retained and checked in CI.
 It establishes how these five controls behaved in that environment, not general detection rates.
 Local subprocess logs are produced by the runner and can be rewritten by someone controlling
 the checkout. Hashes and replay expose accidental changes and internal inconsistency; they are

@@ -1,5 +1,6 @@
 import json
 import shutil
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -49,11 +50,39 @@ class ControlsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             check(self.out)
 
+    def test_changed_final_receipt_anchor_verdict_rejected(self):
+        run(self.out)
+        p = self.out / 'REPORT.receipt.json'
+        data = json.loads(p.read_text())
+        data['predicate']['anchors'][0]['status'] = 'BROKEN'
+        p.write_text(json.dumps(data))
+        with self.assertRaises(ValueError):
+            check(self.out)
+
     def test_changed_fixture_rejected(self):
         run(self.out)
         (self.out / 'fixture.txt').write_text('altered\n')
         with self.assertRaises(ValueError):
             check(self.out)
+
+    def test_evidence_bytes_survive_git_checkout(self):
+        root = self.out.parent / 'repo'
+        bundle = root / 'results' / 'E000'
+        run(bundle)
+        attributes = Path(__file__).resolve().parents[1] / '.gitattributes'
+        shutil.copyfile(attributes, root / '.gitattributes')
+        raw = root / 'results' / 'byte-fidelity.txt'
+        raw.write_bytes(b'original\r\nbytes\r\n')
+        for args in (['init', str(root)], ['-C', str(root), 'add', '.']):
+            subprocess.run(['git', *args], check=True, capture_output=True)
+        exported = self.out.parent / 'exported'
+        exported.mkdir()
+        subprocess.run(['git', '-C', str(root), 'checkout-index', '--all',
+                        '--prefix=' + exported.as_posix() + '/'], check=True, capture_output=True)
+        for path in (root / 'results').rglob('*'):
+            if path.is_file():
+                self.assertEqual(path.read_bytes(), (exported / path.relative_to(root)).read_bytes())
+        check(exported / 'results' / 'E000')
 
     def test_changed_metrics_rejected(self):
         run(self.out)

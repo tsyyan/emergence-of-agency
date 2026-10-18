@@ -1,0 +1,55 @@
+{
+ "_type": "https://in-toto.io/Statement/v1",
+ "subject": [
+  {
+   "name": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\missing.report.md",
+   "digest": {
+    "sha256": "11776ccb6605635feceff6e0439dae870a5c52e2a2d0c24251329622d1a099de"
+   }
+  }
+ ],
+ "predicateType": "https://github.com/tsyyan/buddie#receipt-v0",
+ "predicate": {
+  "tool": {
+   "buddie": "0.4.0",
+   "verbatim": "0.3.4"
+  },
+  "checked_at": "2026-10-18T13:14:34Z",
+  "outcome": "GAPS",
+  "line": "buddie GAPS: anchors 0/1 hold",
+  "summary": {
+   "quotes": {},
+   "short_quotes_skipped": 0,
+   "unlinked_terms": 0,
+   "numbers": {},
+   "anchors": {
+    "UNCHECKABLE": 1
+   },
+   "unanchored_count_lines": 0,
+   "mandate": {},
+   "work": {
+    "anchored": 0,
+    "broken": 0,
+    "prose": 0
+   }
+  },
+  "notes": [],
+  "unanchored": [],
+  "prose_work": [],
+  "blocking": [],
+  "gaps": [
+   "anchor line 1 ⚓ absent.txt#bd9e6a5311b35eb59a90fed857901c4aee1cd77c36d130629be8aa0cd60b85aa: no repo has absent.txt"
+  ],
+  "quotes": [],
+  "numbers": [],
+  "anchors": [
+   {
+    "anchor": "absent.txt#bd9e6a5311b35eb59a90fed857901c4aee1cd77c36d130629be8aa0cd60b85aa",
+    "status": "UNCHECKABLE",
+    "why": "no repo has absent.txt",
+    "line": 1
+   }
+  ],
+  "mandate": []
+ }
+}

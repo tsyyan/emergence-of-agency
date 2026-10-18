@@ -17,6 +17,9 @@ Python >=3.11, no core runtime dependencies. Packages: `buddie/` (anchors, effec
 CLI, MCP and hooks), `verbatim/` (quotes, numbers and source snapshots). Also `tests/`,
 `examples/`, `skills/`, historical `results/`, provenance and licensing files.
 README says this repository is exported from a separate lab; preserve that independence.
+Packaging metadata reports 0.3.0, while pinned source reports Buddie 0.4.0 and verbatim 0.3.4.
+The integration therefore identifies upstream by full commit, not version label alone.
+Raw remote branch/workflow observations are in [repository-state.json](audit/repository-state.json).
 
 Main's observed CI [37150446692](https://github.com/tsyyan/buddie/actions/runs/37150446692)
 is success. Latest observed run [37926560401](https://github.com/tsyyan/buddie/actions/runs/37926560401)

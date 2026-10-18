@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\.venv\\Scripts\\python.exe",
+    "-m",
+    "buddie",
+    "verify",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\missing.report.md",
+    "--repo",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+    "--no-fetch",
+    "--no-github",
+    "--json",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\missing.receipt.json"
+  ],
+  "finished_at": "2026-10-18T13:14:34.678480+00:00",
+  "returncode": 0,
+  "started_at": "2026-10-18T13:14:34.290213+00:00",
+  "stderr": "",
+  "stdout": "gap   anchor line 1 ⚓ absent.txt#bd9e6a5311b35eb59a90fed857901c4aee1cd77c36d130629be8aa0cd60b85aa: no repo has absent.txt\nbuddie GAPS: anchors 0/1 hold\n"
+}

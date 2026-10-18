@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\.venv\\Scripts\\python.exe",
+    "-m",
+    "buddie",
+    "verify",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\malformed.report.md",
+    "--repo",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+    "--no-fetch",
+    "--no-github",
+    "--json",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\malformed.receipt.json"
+  ],
+  "finished_at": "2026-10-18T13:14:35.456283+00:00",
+  "returncode": 1,
+  "started_at": "2026-10-18T13:14:35.075083+00:00",
+  "stderr": "",
+  "stdout": "BLOCK anchor line 1 ⚓ invalid-anchor: not an anchor: expected path#sha256, path@commit, fact=value, pr:, ci: or run:\nbuddie FAIL: anchors 0/1 hold, 1 broken\n"
+}

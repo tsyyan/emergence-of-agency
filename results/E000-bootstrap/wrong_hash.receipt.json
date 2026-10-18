@@ -1,0 +1,56 @@
+{
+ "_type": "https://in-toto.io/Statement/v1",
+ "subject": [
+  {
+   "name": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap\\wrong_hash.report.md",
+   "digest": {
+    "sha256": "7fafb6d283d936c792de272633aa3753e639481be81d485d655b56c048aefad0"
+   }
+  }
+ ],
+ "predicateType": "https://github.com/tsyyan/buddie#receipt-v0",
+ "predicate": {
+  "tool": {
+   "buddie": "0.4.0",
+   "verbatim": "0.3.4"
+  },
+  "checked_at": "2026-10-18T13:14:09Z",
+  "outcome": "FAIL",
+  "line": "buddie FAIL: anchors 0/1 hold, 1 broken",
+  "summary": {
+   "quotes": {},
+   "short_quotes_skipped": 0,
+   "unlinked_terms": 0,
+   "numbers": {},
+   "anchors": {
+    "BROKEN": 1
+   },
+   "unanchored_count_lines": 0,
+   "mandate": {},
+   "work": {
+    "anchored": 0,
+    "broken": 0,
+    "prose": 0
+   }
+  },
+  "notes": [],
+  "unanchored": [],
+  "prose_work": [],
+  "blocking": [
+   "anchor line 1 ⚓ fixture.txt#0000000000000000000000000000000000000000000000000000000000000000: sha256 is now bd9e6a5311b3"
+  ],
+  "gaps": [],
+  "quotes": [],
+  "numbers": [],
+  "anchors": [
+   {
+    "anchor": "fixture.txt#0000000000000000000000000000000000000000000000000000000000000000",
+    "status": "BROKEN",
+    "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap",
+    "why": "sha256 is now bd9e6a5311b3",
+    "line": 1
+   }
+  ],
+  "mandate": []
+ }
+}

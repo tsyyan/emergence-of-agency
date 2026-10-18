@@ -37,6 +37,8 @@ jobs:
         run: python -m agency check build/E000-ci
       - name: Replay committed evidence
         run: python -m agency check results/E000-bootstrap
+      - name: Replay versioned evidence
+        run: python -m agency check results/E000-versioned
       - name: Preserve evidence even on failure
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\.venv\\Scripts\\python.exe",
+    "-m",
+    "buddie",
+    "verify",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap\\valid.report.md",
+    "--repo",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap",
+    "--no-fetch",
+    "--no-github",
+    "--json",
+    "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap\\valid.receipt.json"
+  ],
+  "finished_at": "2026-10-18T13:14:09.047614+00:00",
+  "returncode": 0,
+  "started_at": "2026-10-18T13:14:08.653696+00:00",
+  "stderr": "",
+  "stdout": "buddie PASS: anchors 1/1 hold\n"
+}

@@ -1,0 +1,155 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "anchors": [
+      {
+        "anchor": "fixture.txt#bd9e6a5311b35eb59a90fed857901c4aee1cd77c36d130629be8aa0cd60b85aa",
+        "line": 17,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "environment.json#6e0ad9593c53aa4a0299154e78e204817509b0f31acfae459c6e2b03c65a1b56",
+        "line": 18,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "summary.json#e30100a5cbbb202b320cc34b386e17ad2895a5107386a08d4fe6add09e109b3b",
+        "line": 19,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "valid.report.md#898f764a8b3fefee0d5d316d1fb6c42a8b9ca8cbeb0f4ea3109c1bff2f84870f",
+        "line": 20,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "valid.receipt.json#ac3ae3215d50e152794b6c243056d38a70d7d0acc69c2f4104c557d2988f57c5",
+        "line": 21,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "valid.execution.json#da7382d3f44b48d6c45c0a459817b41e34f101fcc962d2e94ca7368454709f0f",
+        "line": 22,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "wrong_hash.report.md#7fafb6d283d936c792de272633aa3753e639481be81d485d655b56c048aefad0",
+        "line": 23,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "wrong_hash.receipt.json#48a2e4942b36b057f60af5a43fa63bdf8a6260f2266a14026b172fffe0672f60",
+        "line": 24,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "wrong_hash.execution.json#6982b6e488b79292cafc63695acb35581dc236092497353bc6be014df6c961ad",
+        "line": 25,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "missing.report.md#11776ccb6605635feceff6e0439dae870a5c52e2a2d0c24251329622d1a099de",
+        "line": 26,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "missing.receipt.json#749fba5d7d033d196c2c069689236fb8666ce9d7ff96d6f9a56140d7a46234bc",
+        "line": 27,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "missing.execution.json#9bd857e5b28e49ac7003e8d7297fce83130d0cdcef5d0f0b85e40e49914dc6ca",
+        "line": 28,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "empty.report.md#e5bdcb3279deda26e0c3ec1d150d317b245ba61ed79c03e2004407e231c217f1",
+        "line": 29,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "empty.receipt.json#63f7de92d5262550bbc820290e7f1699dcba005c5358be16b49216daf1a1a2d6",
+        "line": 30,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "empty.execution.json#89b535d7a29a0d5a95a1716f4a29860b84f9fd80162171c05b0ca03a467ce481",
+        "line": 31,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "malformed.report.md#2fb34980e398acbff905670c2771f9d1a62277185d595308578503c80fd460d3",
+        "line": 32,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "malformed.receipt.json#918fbf7599cbc57db6e386bb45935161b5bb09d8b786f36d0aa04bd49a255aad",
+        "line": 33,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      },
+      {
+        "anchor": "malformed.execution.json#e1b76e02fd46f9c6c44f8299577c3e09c0f756876430e1c333a15694cf13c830",
+        "line": 34,
+        "repo": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned",
+        "status": "HOLDS"
+      }
+    ],
+    "blocking": [],
+    "checked_at": "2026-10-18T13:14:35Z",
+    "gaps": [],
+    "line": "buddie PASS: anchors 18/18 hold",
+    "mandate": [],
+    "notes": [],
+    "numbers": [],
+    "outcome": "PASS",
+    "prose_work": [],
+    "quotes": [],
+    "summary": {
+      "anchors": {
+        "HOLDS": 18
+      },
+      "mandate": {},
+      "numbers": {},
+      "quotes": {},
+      "short_quotes_skipped": 0,
+      "unanchored_count_lines": 0,
+      "unlinked_terms": 0,
+      "work": {
+        "anchored": 0,
+        "broken": 0,
+        "prose": 0
+      }
+    },
+    "tool": {
+      "buddie": "0.4.0",
+      "verbatim": "0.3.4"
+    },
+    "unanchored": []
+  },
+  "predicateType": "https://github.com/tsyyan/buddie#receipt-v0",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "72d768d4345ed75f7fe3e75d986ee7a4e10cc01c7f75f1ea05e214a980eb9be3"
+      },
+      "name": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-versioned\\REPORT.md"
+    }
+  ]
+}

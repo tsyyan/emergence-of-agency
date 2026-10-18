@@ -1,5 +1,6 @@
 """Execute Buddie, preserve receipts, and replay the narrowly defined E000 controls."""
 import hashlib
+import copy
 import importlib.metadata
 import json
 import os
@@ -102,6 +103,17 @@ def summarize(observed):
             'model_runs': 0}
 
 
+def substantive_receipt(receipt):
+    """Ignore only recheck time and historical locations; compare all verdict content."""
+    value = copy.deepcopy(receipt)
+    value['predicate'].pop('checked_at', None)
+    for subject in value['subject']:
+        subject.pop('name', None)
+    for anchor in value['predicate']['anchors']:
+        anchor.pop('repo', None)
+    return value
+
+
 def run(output: Path):
     output = output.resolve()
     output.mkdir(parents=True, exist_ok=False)
@@ -158,7 +170,6 @@ def check(output: Path):
         raise ValueError('Report or evidence bytes changed')
     receipt = strict_report(output / 'REPORT.md', [output / n for n in evidence_names()])
     saved = load(output / 'REPORT.receipt.json')
-    if (saved['subject'][0]['digest'] != receipt['subject'][0]['digest']
-            or saved['predicate']['outcome'] != 'PASS'):
+    if substantive_receipt(saved) != substantive_receipt(receipt):
         raise ValueError('Final receipt does not bind report')
     return summary

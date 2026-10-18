@@ -1,0 +1,44 @@
+{
+ "_type": "https://in-toto.io/Statement/v1",
+ "subject": [
+  {
+   "name": "C:\\Users\\kakah\\.codex\\.chatgpt-projects\\g-p-6ad41a4295ec8191b43ef90b6763f6b3\\work\\emergence-of-agency\\results\\E000-bootstrap\\empty.report.md",
+   "digest": {
+    "sha256": "e5bdcb3279deda26e0c3ec1d150d317b245ba61ed79c03e2004407e231c217f1"
+   }
+  }
+ ],
+ "predicateType": "https://github.com/tsyyan/buddie#receipt-v0",
+ "predicate": {
+  "tool": {
+   "buddie": "0.4.0",
+   "verbatim": "0.3.4"
+  },
+  "checked_at": "2026-10-18T13:14:10Z",
+  "outcome": "EMPTY",
+  "line": "buddie EMPTY: nothing to check",
+  "summary": {
+   "quotes": {},
+   "short_quotes_skipped": 0,
+   "unlinked_terms": 0,
+   "numbers": {},
+   "anchors": {},
+   "unanchored_count_lines": 0,
+   "mandate": {},
+   "work": {
+    "anchored": 0,
+    "broken": 0,
+    "prose": 0
+   }
+  },
+  "notes": [],
+  "unanchored": [],
+  "prose_work": [],
+  "blocking": [],
+  "gaps": [],
+  "quotes": [],
+  "numbers": [],
+  "anchors": [],
+  "mandate": []
+ }
+}

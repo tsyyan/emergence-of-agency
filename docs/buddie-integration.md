@@ -25,6 +25,8 @@ Replay checks the fixed control reports, fixture bytes, observed/expected outcom
 report digests, exit codes, derived summary, deterministic final report and its receipt subject.
 The final report covers all control reports, receipts, execution records, environment and summary.
 Absolute paths inside historical receipts are retained as evidence, never used to resolve replay.
+The final receipt is compared in full except for recheck time, subject name and anchor repo paths.
+`results/** -text` preserves raw receipt bytes through Git checkout, including Windows CRLF.
 
 Receipts are ordinary JSON, not cryptographically signed attestations. The author can rewrite
 all mutually consistent files; this integration does not prevent that. CI runs the same harness
@@ -37,6 +39,10 @@ Upstream also exposes an MCP stdio service via `python -m buddie serve` with `ve
 `snap` and `source_text`. This is a documented next option, not an installed Codex connector.
 No new Claude hook is installed. To verify cited sources in future research, retain lawful
 snapshots and run the quote checker with a defined source-access policy; E000 does not test it.
+
+Known minor limitation: an unexpected Buddie process failure before a receipt exists raises an
+error with stdout/stderr, but does not save that failed process record in the partial bundle.
+The partial directory is retained and cannot be overwritten; CI retains step diagnostics.
 
 ## Upgrade
 
