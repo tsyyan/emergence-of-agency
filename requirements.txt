@@ -1,0 +1,2 @@
+# Independent upstream, reviewed main as of 2026-10-18. Upgrade deliberately.
+buddie @ git+https://github.com/tsyyan/buddie.git@ddb4db85496a1889d2ea8768a7841eb60d9353e9
